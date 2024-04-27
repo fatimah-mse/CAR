@@ -3,7 +3,6 @@ let name = document.getElementById('name')
 let numder = document.getElementById('number')
 let gov = document.getElementById('gov')
 let model = document.getElementById('m')
-const inputs = document.querySelectorAll('input');
 
 let cardArray = [];
 
