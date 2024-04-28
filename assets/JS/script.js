@@ -16,10 +16,13 @@ function Alert (type , msg) {
     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>`
 
     document.body.append(element);
+
+    setTimeout(() => { element.remove()}, 3000)
 }
 
+
 function add() {
-    if (name.value === '' | numder.value === '' | gov.value === '' | model.value === '' ) {
+    if (name.value.trim() === '' | numder.value.trim() === '' | gov.value.trim() === '' | model.value.trim() === '' ) {
         Alert('ERROR', 'To Save Changes You Have to fill all Fileds')
         name.value = ''
         numder.value = ''
@@ -48,5 +51,3 @@ function add() {
         Alert('SUCCESS', 'Add a New Car Successfully')
     }
 }
-
-
